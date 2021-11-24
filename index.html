@@ -5,29 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <header id="mys">
-        <h1>Weight Converter</h1>
+        <div class="heading-tag">
+            <marquee>
+                <h1>Weight Converter</h1>
+            </marquee>
+        </div>
     </header>
-    <p>Type the value of any of the fields to convert between weight measurements:</p>
-   <div class="container">
-       <label>Pounds</label>
-       <input type="number" id="pounds" oninput="weightConvert(this.value)" onchange="weightConvert(this.value)">
-       
-       <label>Kilograms</label>
-       <input type="number" id="kilograms" oninput="weightConvert(this.value)" onchange="weightConvert(this.value)">
-
-       <label>Ounces</label>
-       <input type="number" id="ounces" oninput="weightConvert(this.value)" onchange="weightConvert(this.value)">
-
-       <label>Grams</label>
-       <input type="number" id="grams" oninput="weightConvert(this.value)" onchange="weightConvert(this.value)">
-
-       <label>Stones</label>
-       <input type="number" id="stones" oninput="weightConvert(this.value)" onchange="weightConvert(this.value)">
-   </div>
-   <script src="app.js"></script>
+    <div class="para1">
+        <h2>Type the value of any of the fields to convert between weight measurements:</h2>
+    </div>
+    <div class="container">
+        <div class="table">
+            <table>
+                <tr>
+                    <th>Pounds</th>
+                    <th>Kilograms</th> 
+                    <th>Ounces</th>
+                    <th>Grams</th>
+                    <th>Stones</th>
+                </tr>
+            </table> 
+            <input type="number" id="pounds" oninput="weightConvert(this.value)" onchange="weightConvert(this.value)">
+            <input type="number" id="kilograms" oninput="weightConvert(this.value)" onchange="weightConvert(this.value)">
+            <input type="number" id="ounces" oninput="weightConvert(this.value)" onchange="weightConvert(this.value)">
+            <input type="number" id="grams" oninput="weightConvert(this.value)" onchange="weightConvert(this.value)">
+            <input type="number" id="stones" oninput="weightConvert(this.value)" onchange="weightConvert(this.value)">
+        </div>
+    </div>
+   <script src="index.js"></script>
 </body>
 </html>
