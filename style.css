@@ -1,0 +1,10 @@
+*{
+    padding: auto;
+    border: 2px;
+    display: flex flex;
+    flex-wrap: wrap;
+}
+#mys{
+    color: aliceblue;
+    background-color: rgba(16, 185, 185, 0.822);
+}
