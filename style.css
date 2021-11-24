@@ -1,10 +1,146 @@
 *{
-    padding: auto;
-    border: 2px;
-    display: flex flex;
-    flex-wrap: wrap;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
 }
+
+body{
+    display: flex;
+    top:0;
+    left:0;
+    width:100%;
+    max-height:100vh;
+    background-color:black;
+}
+
 #mys{
-    color: aliceblue;
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+}
+
+.heading-tag{
+    position:relative;
+    top:0;
+    left:0;
+    margin-top: 20px;
+    width:100%;
     background-color: rgba(16, 185, 185, 0.822);
+    padding:20px;
+}
+
+.heading-tag marquee{
+    position:relative;
+    color:white;
+    letter-spacing: 5px;
+}
+
+.para1{
+    display:block;
+    position:absolute;
+    top:110px;
+    left:0;
+    color:white;
+    width: 100%;
+    padding:20px;
+    text-align: center;
+}
+
+.container{
+    position: relative;
+    top:200px;
+    left:0;
+    width:100%;
+    align-items: center;
+    justify-content:center;
+}
+
+.container .table{
+    display: flex;
+    position:relative;
+    color:white;
+    width:100%;
+    padding:30px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.container .table table{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+}
+
+.container .table table tr:nth-child(2){
+    position:relative;
+    top:100px;
+    left:0;
+    width:100%;
+    padding:20px;
+}
+
+.container .table table tr{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    padding:20px;
+}
+
+.container .table table tr th{
+    position:relative;
+    top:0;
+    left:0;
+    text-align: center;
+}
+
+.container .table input{
+    position:relative;
+    top:0;
+    left:0;
+    width:70%;
+    margin:0px 10px;
+    font-size: 20px;
+    background-color:black;
+    color:white;
+    border:1px solid white;
+    border-radius:5px;
+    padding:4px 10px;
+}
+
+@media screen and (max-width:450px){
+    .container .table{
+        display:flex;
+        position:relative;
+        flex-direction: column;
+    }
+
+    .container .table tr{
+        display:flex;
+        position:relative;
+        flex-direction: column;
+        padding:20px;
+    }
+
+    .container .table tr th{
+        display:flex;
+        position:absolute;
+        top:10px;
+        left:0;
+        margin-top:30px;
+        margin-bottom:30px;
+        align-items: center;    
+        justify-content: space-between;
+        grid-template-columns: 30px;
+    }
+
+    .container .table input{
+        position: relative;
+        top:0;
+        left:40px;
+        margin:20px 10px;
+    }
 }
